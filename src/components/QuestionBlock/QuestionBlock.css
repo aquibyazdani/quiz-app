@@ -1,0 +1,95 @@
+.question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singleQuestion {
+  width: 95%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.singleOption {
+  width: 46%;
+  height: 50px;
+  padding: 15px 20px;
+  margin: 10px;
+  box-shadow: 0 0 2px black;
+}
+
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-top: 8px !important;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbb;
+  /* background-color: #e7e6e7; */
+  border-radius: 50%;
+}
+
+.veiw{
+  display: flex !important;
+    align-items: flex-end !important;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: #f50057;
+}
+
+.nxt-ques{
+  background-color: #f50057;
+}
+
+.question-line{
+  margin-top: 4rem;
+}
+
+
+
+.label-radio{
+  margin-left: 8px;
+  font-size: larger;
+}
+
+
+@media (max-width: 614px) {
+  .singleOption {
+    width: 100%;
+  }
+}
+
+.controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
